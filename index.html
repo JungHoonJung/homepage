@@ -10,7 +10,6 @@
     <!-- Google Fonts for Formal Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Using a classic serif for body (Lora) and clean sans-serif for headings (Inter) -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap"
         rel="stylesheet">
@@ -20,34 +19,10 @@
 
 <body>
     <div class="layout-container">
-        <!-- Sidebar Navigation -->
+        <!-- Sidebar Navigation (Populated via JS) -->
         <aside class="sidebar">
-            <div class="profile-container">
-                <img src="assets/img/profile.png" alt="Jung-Hoon Jung" class="profile-image">
-                <h1 class="name">Jung-Hoon Jung</h1>
-                <p class="title">Ph.D. in Physics</p>
-                <p class="affiliation">University of Seoul</p>
-
-                <div class="contact-info">
-                    <a href="mailto:jh.gnuaz@gmail.com" class="contact-link">
-                        <svg viewBox="0 0 24 24" fill="none" class="icon" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                            </path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                        jh.gnuaz@gmail.com
-                    </a>
-                </div>
-
-                <div class="social-links">
-                    <a href="https://scholar.google.com/citations?user=ZazUXJcAAAAJ" target="_blank" rel="noopener"
-                        title="Google Scholar">Google
-                        Scholar</a>
-                    <a href="https://github.com/junghoonjung/" target="_blank" rel="noopener" title="GitHub">GitHub</a>
-                    <a href="https://www.linkedin.com/in/junghoon-jung-6b16b41b9/" target="_blank" rel="noopener"
-                        title="LinkedIn">LinkedIn</a>
-                </div>
+            <div class="profile-container" id="profile-container">
+                <!-- Profile data will drop in here -->
             </div>
 
             <nav class="nav-menu">
@@ -65,30 +40,13 @@
             <!-- About Section -->
             <section id="about" class="section">
                 <h2 class="section-title">About Me</h2>
-                <div class="text-content">
-                    <p>
-                        I am a researcher holding a Ph.D. in Physics from the University of Seoul. My research
-                        focuses on understanding the structure and dynamics of complex systems, utilizing tools from
-                        network science, nonlinear dynamics, and statistical physics.
-                    </p>
-                    <p>
-                        I am particularly interested in real-world, spatially embedded networks and higher-order network
-                        structures (e.g., simplicial complexes, hypergraphs). My recent doctoral work established novel
-                        frameworks for identifying local congestion events and analyzing urban traffic congestion as a
-                        complex contagion process, seeking to capture topological loop structures and hysteresis in
-                        urban transportation networks.
-                    </p>
+                <div class="text-content" id="about-content">
+                    <!-- About data will drop in here -->
                 </div>
 
                 <h3 class="subsection-title">Research Interests</h3>
-                <ul class="tag-list">
-                    <li>Collective phenomena</li>
-                    <li>Cascading failure</li>
-                    <li>Network structure</li>
-                    <li>Spreading phenomena</li>
-                    <li>Topological data analysis</li>
-                    <li>Human mobility networks</li>
-                    <li>Urban physics</li>
+                <ul class="tag-list" id="interests-list">
+                    <!-- Interests data will drop in here -->
                 </ul>
             </section>
 
@@ -97,110 +55,21 @@
                 <h2 class="section-title">Curriculum Vitae</h2>
 
                 <h3 class="subsection-title">Education</h3>
-                <div class="cv-item">
-                    <div class="cv-date">2021 &ndash; 2026</div>
-                    <div class="cv-details">
-                        <h4>Ph.D. in Physics, University of Seoul</h4>
-                        <p class="thesis">Thesis: Congestion Dynamics in Urban Road Networks</p>
-                        <p class="advisor">Advisor: Prof. Young-Ho Eom</p>
-                    </div>
-                </div>
-                <div class="cv-item">
-                    <div class="cv-date">2019 &ndash; 2021</div>
-                    <div class="cv-details">
-                        <h4>Master of Science, University of Seoul</h4>
-                    </div>
-                </div>
-                <div class="cv-item">
-                    <div class="cv-date">2012 &ndash; 2019</div>
-                    <div class="cv-details">
-                        <h4>Bachelor of Science, University of Seoul</h4>
-                    </div>
+                <div id="education-list">
+                    <!-- Education data will drop in here -->
                 </div>
 
                 <h3 class="subsection-title">Computer Skills</h3>
-                <div class="cv-item">
-                    <div class="cv-date">Programming</div>
-                    <div class="cv-details">
-                        <p>Python, C++, Julia, LaTeX, CUDA</p>
-                    </div>
-                </div>
-                <div class="cv-item">
-                    <div class="cv-date">OS & Tools</div>
-                    <div class="cv-details">
-                        <p>GNU/Linux, Windows, MacOS, Gitlab, Jupyterhub, Docker</p>
-                    </div>
+                <div id="skills-list">
+                    <!-- Skills data will drop in here -->
                 </div>
             </section>
 
             <!-- Publications Section -->
             <section id="publications" class="section">
                 <h2 class="section-title">Publications</h2>
-                <div class="publication-list">
-
-                    <div class="pub-item">
-                        <div class="pub-image">
-                            <img src="assets/img/pub_1.png" alt="Hysteresis in Urban Congestion Spreading">
-                        </div>
-                        <div class="pub-info">
-                            <h4 class="pub-title">
-                                <a href="https://doi.org/10.1103/hrfw-1g56" target="_blank" rel="noopener">
-                                    Modeling Multistability and Hysteresis in Urban Congestion Spreading
-                                </a>
-                            </h4>
-                            <p class="pub-authors"><strong>Jung-Hoon Jung</strong> and Young-Ho Eom</p>
-                            <p class="pub-journal"><em>Physical Review E</em> 112.6, 064308 (2025)</p>
-                        </div>
-                    </div>
-
-                    <div class="pub-item">
-                        <div class="pub-image">
-                            <img src="assets/img/pub_2.png" alt="Empirical Analysis of Congestion Spreading">
-                        </div>
-                        <div class="pub-info">
-                            <h4 class="pub-title">
-                                <a href="https://doi.org/10.1103/PhysRevE.108.054312" target="_blank" rel="noopener">
-                                    Empirical Analysis of Congestion Spreading in Seoul Traffic Network
-                                </a>
-                            </h4>
-                            <p class="pub-authors"><strong>Jung-Hoon Jung</strong> and Young-Ho Eom</p>
-                            <p class="pub-journal"><em>Physical Review E</em> 108.5, 054312 (2023)</p>
-                        </div>
-                    </div>
-
-                    <div class="pub-item">
-                        <div class="pub-image">
-                            <img src="assets/img/pub_3.png" alt="Percolation-Based Empirical Analysis of Urban Traffic">
-                        </div>
-                        <div class="pub-info">
-                            <h4 class="pub-title">
-                                <a href="https://doi.org/10.1063/5.0150217" target="_blank" rel="noopener">
-                                    Global Efficiency and Network Structure of Urban Traffic Flows: A Percolation-Based
-                                    Empirical Analysis
-                                </a>
-                            </h4>
-                            <p class="pub-authors">Yungi Kwon, <strong>Jung-Hoon Jung</strong>, and Young-Ho Eom</p>
-                            <p class="pub-journal"><em>Chaos: An Interdisciplinary Journal of Nonlinear Science</em>
-                                33.11, 113104 (2023)</p>
-                        </div>
-                    </div>
-
-                    <div class="pub-item">
-                        <div class="pub-image">
-                            <img src="assets/img/pub_4.png" alt="Exact Diagonalization Study of Quantum Thermalization">
-                        </div>
-                        <div class="pub-info">
-                            <h4 class="pub-title">
-                                <a href="https://doi.org/10.3938/jkps.76.670" target="_blank" rel="noopener">
-                                    Guide to Exact Diagonalization Study of Quantum Thermalization
-                                </a>
-                            </h4>
-                            <p class="pub-authors"><strong>Jung-Hoon Jung</strong> and Jae Dong Noh</p>
-                            <p class="pub-journal"><em>Journal of the Korean Physical Society</em> 76.8, pp. 670–683
-                                (2020)</p>
-                        </div>
-                    </div>
-
+                <div class="publication-list" id="publication-list">
+                    <!-- Publications data will drop in here -->
                 </div>
             </section>
 
@@ -209,46 +78,13 @@
                 <h2 class="section-title">Honors & Presentations</h2>
 
                 <h3 class="subsection-title">Awards</h3>
-                <ul class="bullet-list">
-                    <li>
-                        <strong>Poster 1st Prize Award</strong>, <em>STATPHYS29</em>, Topic 8, Florence, Italy (Jul
-                        2025)
-                    </li>
-                    <li>
-                        <strong>Best Presentation Award</strong>, <em>Korea Physical Society Spring Meeting</em>,
-                        Daejeon (Apr 2024)
-                    </li>
-                    <li>
-                        <strong>Project Awards</strong>, <em>KIAS-APCTP Winter School on Statistical Physics</em>
-                        ('19-'21, '23-'25)
-                    </li>
+                <ul class="bullet-list" id="awards-list">
+                    <!-- Awards data will drop in here -->
                 </ul>
 
                 <h3 class="subsection-title">Selected Talks</h3>
-                <ul class="bullet-list">
-                    <li>
-                        <em>The 29th International Conferences on Statistical Physics, STATPHYS29</em>, Firenze, Italy
-                        (Jul 2025). Poster contribution.
-                    </li>
-                    <li>
-                        <em>Nonequilibrium Statistical Physics of Complex Systems (NSPCS2024)</em>, Seoul, Korea (Jul
-                        2024). Poster contribution.
-                    </li>
-                    <li>
-                        <strong>Uncovering the microscopic mechanisms of congestion spreading in urban road
-                            networks</strong>, <em>2024 KPS spring meeting</em>, Daejeon, Korea (Apr 2024). Oral
-                        contribution.
-                    </li>
-                    <li>
-                        <strong>Empirical analysis of congestion spreading in Seoul traffic network</strong>, <em>The
-                            22nd Workshop for Statistical Physics 2023</em>, Hwasun, Korea (Aug 2023). Oral
-                        contribution.
-                    </li>
-                    <li>
-                        <strong>State Propagation Algorithm Reveals Macroscopic Patterns of Urban Traffic
-                            Congestion</strong>, <em>2023 KPS spring meeting</em>, Daejeon, Korea (Apr 2023). Oral
-                        contribution.
-                    </li>
+                <ul class="bullet-list" id="talks-list">
+                    <!-- Talks data will drop in here -->
                 </ul>
             </section>
 

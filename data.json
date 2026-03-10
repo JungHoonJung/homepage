@@ -1,0 +1,100 @@
+{
+    "profile": {
+        "name": "Jung-Hoon Jung",
+        "title": "Ph.D. in Physics",
+        "affiliation": "University of Seoul",
+        "email": "jh.gnuaz@gmail.com",
+        "social": {
+            "googleScholar": "https://scholar.google.com/citations?user=ZazUXJcAAAAJ",
+            "github": "https://github.com/junghoonjung/",
+            "linkedin": "https://www.linkedin.com/in/junghoon-jung-6b16b41b9/"
+        }
+    },
+    "about": {
+        "description": [
+            "I am a researcher holding a Ph.D. in Physics from the University of Seoul. My research focuses on understanding the structure and dynamics of complex systems, utilizing tools from network science, nonlinear dynamics, and statistical physics.",
+            "I am particularly interested in real-world, spatially embedded networks and higher-order network structures (e.g., simplicial complexes, hypergraphs). My recent doctoral work established novel frameworks for identifying local congestion events and analyzing urban traffic congestion as a complex contagion process, seeking to capture topological loop structures and hysteresis in urban transportation networks."
+        ],
+        "interests": [
+            "Collective phenomena",
+            "Cascading failure",
+            "Network structure",
+            "Spreading phenomena",
+            "Topological data analysis",
+            "Human mobility networks",
+            "Urban physics"
+        ]
+    },
+    "cv": {
+        "education": [
+            {
+                "date": "2021 &ndash; 2026",
+                "title": "Ph.D. in Physics, University of Seoul",
+                "thesis": "Thesis: Congestion Dynamics in Urban Road Networks",
+                "advisor": "Advisor: Prof. Young-Ho Eom"
+            },
+            {
+                "date": "2019 &ndash; 2021",
+                "title": "Master of Science, University of Seoul"
+            },
+            {
+                "date": "2012 &ndash; 2019",
+                "title": "Bachelor of Science, University of Seoul"
+            }
+        ],
+        "skills": [
+            {
+                "category": "Programming",
+                "details": "Python, C++, Julia, LaTeX, CUDA"
+            },
+            {
+                "category": "OS & Tools",
+                "details": "GNU/Linux, Windows, MacOS, Gitlab, Jupyterhub, Docker"
+            }
+        ]
+    },
+    "publications": [
+        {
+            "title": "Modeling Multistability and Hysteresis in Urban Congestion Spreading",
+            "url": "https://doi.org/10.1103/hrfw-1g56",
+            "authors": "<strong>Jung-Hoon Jung</strong> and Young-Ho Eom",
+            "journal": "<em>Physical Review E</em> 112.6, 064308 (2025)",
+            "image": "assets/img/pub_1.png"
+        },
+        {
+            "title": "Empirical Analysis of Congestion Spreading in Seoul Traffic Network",
+            "url": "https://doi.org/10.1103/PhysRevE.108.054312",
+            "authors": "<strong>Jung-Hoon Jung</strong> and Young-Ho Eom",
+            "journal": "<em>Physical Review E</em> 108.5, 054312 (2023)",
+            "image": "assets/img/pub_2.png"
+        },
+        {
+            "title": "Global Efficiency and Network Structure of Urban Traffic Flows: A Percolation-Based Empirical Analysis",
+            "url": "https://doi.org/10.1063/5.0150217",
+            "authors": "Yungi Kwon, <strong>Jung-Hoon Jung</strong>, and Young-Ho Eom",
+            "journal": "<em>Chaos: An Interdisciplinary Journal of Nonlinear Science</em> 33.11, 113104 (2023)",
+            "image": "assets/img/pub_3.png"
+        },
+        {
+            "title": "Guide to Exact Diagonalization Study of Quantum Thermalization",
+            "url": "https://doi.org/10.3938/jkps.76.670",
+            "authors": "<strong>Jung-Hoon Jung</strong> and Jae Dong Noh",
+            "journal": "<em>Journal of the Korean Physical Society</em> 76.8, pp. 670–683 (2020)",
+            "image": "assets/img/pub_4.png"
+        }
+    ],
+    "presentations": {
+        "awards": [
+            "<strong>Poster 1st Prize Award</strong>, <em>STATPHYS29</em>, Topic 8, Florence, Italy (Jul 2025)",
+            "<strong>Best Presentation Award</strong>, <em>Korea Physical Society Spring Meeting</em>, Daejeon (Apr 2024)",
+            "<strong>Project Awards</strong>, <em>KIAS-APCTP Winter School on Statistical Physics</em> ('19-'21, '23-'25)"
+        ],
+        "talks": [
+            "<em>The 29th International Conferences on Statistical Physics, STATPHYS29</em>, Firenze, Italy (Jul 2025). Poster contribution.",
+            "<em>Nonequilibrium Statistical Physics of Complex Systems (NSPCS2024)</em>, Seoul, Korea (Jul 2024). Poster contribution.",
+            "<strong>Uncovering the microscopic mechanisms of congestion spreading in urban road networks</strong>, <em>2024 KPS spring meeting</em>, Daejeon, Korea (Apr 2024). Oral contribution.",
+            "<strong>Empirical analysis of congestion spreading in Seoul traffic network</strong>, <em>The 22nd Workshop for Statistical Physics 2023</em>, Hwasun, Korea (Aug 2023). Oral contribution.",
+            "<strong>State Propagation Algorithm Reveals Macroscopic Patterns of Urban Traffic Congestion</strong>, <em>2023 KPS spring meeting</em>, Daejeon, Korea (Apr 2023). Oral contribution."
+        ]
+    }
+}
