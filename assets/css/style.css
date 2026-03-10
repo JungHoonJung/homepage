@@ -408,6 +408,7 @@ a:hover {
     grid-template-areas:
       "img name"
       "img title"
+      "img affiliation"
       "img contact"
       "img social";
     gap: 0 1.5rem;
@@ -427,11 +428,15 @@ a:hover {
     font-size: 1.4rem;
   }
 
-  .title,
-  .affiliation {
+  .title {
     grid-area: title;
-    display: inline;
-    margin-right: 0.5rem;
+    display: block;
+  }
+
+  .affiliation {
+    grid-area: affiliation;
+    display: block;
+    margin-bottom: 0.5rem;
   }
 
   .contact-info {
